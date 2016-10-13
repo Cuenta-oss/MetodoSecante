@@ -12,7 +12,7 @@ import net.objecthunter.exp4j.ExpressionBuilder;
 /**
  *
  * @author Fernando
- * Clase para obtener la raiz de una funcion por el metodo de la secante
+ * Clase para obtener la raíz de una función por el método de la secante
  */
 public class Secante {
     
@@ -22,7 +22,7 @@ public class Secante {
                 .build() //se construye
                 .setVariable("x", x); //establecer lo que vale x
         
-        double resultado = e.evaluate(); //se evalua la funcion
+        double resultado = e.evaluate(); //se evalua la función
         return resultado;
     }
     
@@ -40,23 +40,23 @@ public class Secante {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        //leer funcion (-11-22*x+17x^2-2.5x^3)
+        //leer funcion (-11-22x+17x^2-2.5x^3)
         String funcion;
         System.out.println("Escribe la función: ");
         Scanner leerFuncion = new Scanner(System.in);
         funcion = leerFuncion.next();
         
         //leer valores
-        double b; // -> xi-1 (-1)
+        double b; // -> xi-1 (-1)       
         System.out.println("Primer límite: ");
         Scanner leerB = new Scanner(System.in);
         b = leerB.nextDouble();
-        
+
         double a; // -> xi (0)
         System.out.println("Segundo límite: ");
         Scanner leerA = new Scanner(System.in);
         a = leerA.nextDouble();
-        
+
         double c = 0; // -> xi+1
         
         //leer máximo error permitido (0.004)
