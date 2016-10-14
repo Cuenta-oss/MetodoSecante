@@ -8,6 +8,6 @@ Fórmula de la secante
 -----------------
 xi+1 = xi - f(xi) (xi-1 - xi) / f(xi-i) - f(xi)
 
-Librerias utilizas
+Librerias utilizadas
 -----------------
 Exp4j para la lectura de funciones
